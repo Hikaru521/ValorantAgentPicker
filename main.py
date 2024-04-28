@@ -7,7 +7,7 @@ import threading
 
 def teleport(x, y):
     mouse.move(x, y)
-    mouse.click()
+    #mouse.click()
     time.sleep(0.01)
 
 keyboard_cooldown = 0
