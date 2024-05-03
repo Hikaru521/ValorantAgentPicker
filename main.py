@@ -7,7 +7,7 @@ import threading
 
 def teleport(x, y):
     mouse.move(x, y)
-    #mouse.click()
+    mouse.click()
     time.sleep(0.01)
 
 keyboard_cooldown = 0
@@ -19,7 +19,7 @@ def loop():
     while True:
         if is_running:
             teleport(agents.selected_agent[0], agents.selected_agent[1])
-            teleport(960, 725)
+            teleport(760, 580)
             #print("teleported")
         if keyboard_cooldown <= time.time_ns() and keyboard.is_pressed('space'):
             keyboard_cooldown = time.time_ns() + 250000000
