@@ -19,7 +19,7 @@ def loop():
     while True:
         if is_running:
             teleport(agents.selected_agent[0], agents.selected_agent[1])
-            teleport(760, 580)
+            teleport(952, 753)
             #print("teleported")
         if keyboard_cooldown <= time.time_ns() and keyboard.is_pressed('space'):
             keyboard_cooldown = time.time_ns() + 250000000
